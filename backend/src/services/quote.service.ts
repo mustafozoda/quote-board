@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-
 const prisma = new PrismaClient();
 
 export const getAllQuotes = async () => {
@@ -21,4 +20,12 @@ export const createQuote = async (input: CreateQuoteInput) => {
       userId: "guest",
     },
   });
+};
+
+type DeleteQuoteInput = {
+  id: string;
+};
+
+export const deleteQuote = async ({ id }: DeleteQuoteInput) => {
+  return await prisma.quote.delete({ where: { id } });
 };

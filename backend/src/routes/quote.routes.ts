@@ -1,10 +1,10 @@
 import { Router } from "express";
 import asyncHandler from "express-async-handler";
-import { getQuotes, createQuote } from "../controllers/quote.controller";
+import * as quoteController from "../controllers/quote.controller";
 
 const router = Router();
 
-router.get("/", asyncHandler(getQuotes));
-router.post("/", asyncHandler(createQuote));
-
+router.get("/", asyncHandler(quoteController.getQuotes));
+router.post("/", asyncHandler(quoteController.createQuote));
+router.delete("/:id", asyncHandler(quoteController.deleteQuote));
 export default router;

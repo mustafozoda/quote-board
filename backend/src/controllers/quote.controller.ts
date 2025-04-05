@@ -17,3 +17,13 @@ export const createQuote = async (req: Request, res: Response) => {
   const newQuote = await quoteService.createQuote({ author, text });
   res.status(201).json(newQuote);
 };
+
+export const deleteQuote = async (req: Request, res: Response) => {
+  const { id } = req.params;
+  try {
+    await quoteService.deleteQuote({ id });
+    res.status(204).send();
+  } catch (error) {
+    res.status(404).json({ message: "Quote not found." });
+  }
+};

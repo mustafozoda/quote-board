@@ -62,7 +62,6 @@ export default {
     },
   },
 
-  // 🧩 Plugins
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),

@@ -18,6 +18,9 @@ const QuoteForm = () => {
           setText("");
           console.log("Quote posted successfully!");
         },
+        onError: () => {
+          console.error("Failed to post quote.");
+        },
       }
     );
   };
