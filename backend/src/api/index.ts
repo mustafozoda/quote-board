@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import quoteRoutes from "../src/routes/quote.routes";
-import questionRoutes from "../src/routes/question.routes";
+import quoteRoutes from "../routes/quote.routes";
+import questionRoutes from "../routes/question.routes";
 import serverless from "serverless-http";
 
 dotenv.config();
