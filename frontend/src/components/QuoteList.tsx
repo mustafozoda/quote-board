@@ -3,6 +3,7 @@ import {
   SwipeableListItem,
   SwipeAction,
   TrailingActions,
+  Type,
 } from "react-swipeable-list";
 import "react-swipeable-list/dist/styles.css";
 
@@ -42,7 +43,7 @@ const QuoteList = () => {
 
   return (
     <div className="max-w-3xl mx-auto  sm:px-6 lg:px-0 py-8">
-      <SwipeableList threshold={0.25}>
+      <SwipeableList threshold={0.9} type={Type.IOS}>
         {data?.map((quote) => (
           <SwipeableListItem
             key={quote.id}
