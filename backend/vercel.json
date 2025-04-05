@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "buildsCommand": "npm run dev",
+  "outputDirectory": "dist"
+}
