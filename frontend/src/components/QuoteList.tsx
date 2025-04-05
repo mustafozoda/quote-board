@@ -53,7 +53,7 @@ const QuoteList = () => {
     return <p className="text-center text-red-500">Failed to load quotes.</p>;
 
   return (
-    <div className="max-w-3xl mx-auto sm:px-6 lg:px-0 py-8">
+    <div className="max-w-3xl mx-auto  lg:px-0 py-8">
       <SwipeableList threshold={0.9} type={Type.IOS}>
         {data?.map((quote, index) => (
           <SwipeableListItem
