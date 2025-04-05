@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌍 Global Font Smoothing + Antialiasing */
+html {
+  @apply antialiased text-gray-800 bg-gradient-to-br from-blue-50 to-indigo-100;
+  font-family: "Inter", sans-serif;
+}
+
+/* ✨ Smooth Animations & Transitions Everywhere */
+* {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* 🧩 Form Inputs - A little more polish */
+input,
+textarea {
+  @apply focus:outline-none focus:ring-2 focus:ring-indigo-400;
+}
+
+/* 🧊 Glassmorphism Utility (optional use) */
+.glass {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* 💨 Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out both;
+}
