@@ -62,7 +62,7 @@ const QuoteList = () => {
           >
             <div
               ref={index === 0 ? firstItemRef : null}
-              className="bg-light m-2 border w-full border-gray-200 shadow-soft rounded-[15px] p-[10px] transition-all duration-300"
+              className="bg-light m-2 border animate-fadeIn w-full border-gray-200 shadow-soft rounded-[15px] p-[10px] transition-all duration-300"
             >
               <p className="text-lg sm:text-xl font-medium text-dark italic leading-relaxed mb-3">
                 "{quote.text}"
