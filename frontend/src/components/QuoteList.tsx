@@ -29,7 +29,7 @@ const QuoteList = () => {
     if (!el) return;
 
     setTimeout(() => {
-      el.style.transition = "transform 0.3s ease";
+      el.style.transition = "transform 0.7s ease";
       el.style.transform = "translateX(-60px)";
 
       setTimeout(() => {

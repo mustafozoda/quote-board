@@ -14,11 +14,6 @@ const Home = () => {
             Share your thoughts, words of wisdom, or favorite lines. Read quotes
             from others and leave your mark.
           </p>
-          <p className="text-sm text-gray-500 italic">
-            ⚠️ Heads up! This app is hosted on free-tier services (Vercel,
-            Render, Neon). It might take a few seconds to wake up. Thanks for
-            your patience!
-          </p>
         </section>
 
         {/* Form Section */}
@@ -36,6 +31,11 @@ const Home = () => {
           </h2>
           <QuoteList />
         </section>
+        <p className="text-sm text-gray-500 italic">
+          ⚠️ Heads up! This app is hosted on free-tier services (Vercel, Render,
+          Neon). It might take a few seconds to wake up. Thanks for your
+          patience!
+        </p>
       </div>
     </div>
   );
