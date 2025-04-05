@@ -41,7 +41,7 @@ const QuoteList = () => {
   const trailingActions = (quoteId: string) => (
     <TrailingActions>
       <SwipeAction destructive onClick={() => handleDelete(quoteId)}>
-        <div className="flex items-center justify-center rounded-[5px] bg-red-500 text-white px-4">
+        <div className="flex items-center  justify-center rounded-[5px] bg-red-500 text-white px-4">
           <Trash2 className="w-6 h-6" />
         </div>
       </SwipeAction>
